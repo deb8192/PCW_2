@@ -343,11 +343,9 @@ select:hover{
 		height: 48px;
 	    width: 48px;
 	}
-	.menuHamburguesa ul li #bars:hover{
-		.navegacionWeb ul li{
-			display: block;
-		}	
-	}
+	.navegacionWeb ul li{
+		display: block;
+	}	
 	.navegacionWeb ul li{
 		display: none;
 	}
