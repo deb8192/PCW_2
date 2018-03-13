@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "utf-8">
+		<meta name ="viewport" content = "width = device-width, initial-scale = 1">
+		<meta name ="description" content = "Página de inicio de la web Tu chef en casa">
+		<title>Tu chef en casa Inicio</title>
+		<link rel = "stylesheet" type="text/css" href = "css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			<div id="TituloSubtitulo">
+				<a class = "logo" href = "index.html"><img src = "img/Logo_TV_2015.png" alt = "logo" height="125px" width="125px" /></a>
+				<h1 class = "tituloWeb"> Tu chef en casa </h1>
+				<p class = "descripcionWeb"> Tu web para compartir y conseguir recetas </p>
+				<nav class = "navegacionWeb">
+					<ul>
+						<li><a class = "opcionMenu"  href="index.html" title = "Inicio"><i class = "fa fa-home" style="font-size:32px;"> </i><span>Inicio</span></a></li>
+						<li><a class = "opcionMenu"  href="buscar.html"  title = "Buscar"><i class = "fa fa-search" style="font-size:32px;"> </i><span>Buscar</span></a></li>
+						<li><a class = "opcionMenu"  href="login.html" title = "Login"><i class = "fa fa-sign-in" style="font-size:32px;"> </i><span>Login</span></a></li>
+						<li><a class = "opcionMenu"  href="index.html" title = "Logout"><i class = "fa fa-sign-out" style="font-size:32px;"> </i><span>Logout</span></a></li>
+						<li><a class = "opcionMenu"  href="registro.html" title = "Registro"><i class = "fa fa-user-plus" style="font-size:32px;"> </i><span>Registro</span></a></li>
+						<li><a class = "opcionMenu"  href="nueva-receta.html"  title = "Nueva receta"><i class = "fa fa-spoon" style="font-size:32px;"> </i><span>Nueva receta</span></a></li>
+					</ul>
+			</nav>
+			</div>
+			<div id="TituloSubtitulo2">
+				<a class = "logo" href = "index.html"><img src = "img/Logo_TV_2015.png" alt = "logo" height="125px" width="125px" /></a>
+				<nav class = "menuHamburguesa">
+					<ul>
+						<li><a class = "opcionMenu" id = "bars" title = "Menú"><i class = "fa fa-bars" style="font-size:48px;"></i></a>
+							<nav class = "navegacionWeb">
+								<ul>
+									<li><a class = "opcionMenu"  href="index.html" title = "Inicio"><i class = "fa fa-home" style="font-size:48px;"> </i><span>Inicio</span></a></li>
+									<li><a class = "opcionMenu"  href="buscar.html"  title = "Buscar"><i class = "fa fa-search" style="font-size:48px;"> </i><span>Buscar</span></a></li>
+									<li><a class = "opcionMenu"  href="login.html" title = "Login"><i class = "fa fa-sign-in" style="font-size:48px;"> </i><span>Login</span></a></li>
+									<li><a class = "opcionMenu"  href="index.html" title = "Logout"><i class = "fa fa-sign-out" style="font-size:48px;"> </i><span>Logout</span></a></li>
+									<li><a class = "opcionMenu"  href="registro.html" title = "Registro"><i class = "fa fa-user-plus" style="font-size:48px;"> </i><span>Registro</span></a></li>
+									<li><a class = "opcionMenu"  href="nueva-receta.html"  title = "Nueva receta"><i class = "fa fa-spoon" style="font-size:48px;"> </i><span>Nueva receta</span></a></li>
+								</ul>
+							</nav>
+						</li>
+					</ul>
+				</nav>
+				<h1 class = "tituloWeb"> Tu chef en casa </h1>
+				<p class = "descripcionWeb"> Tu web para compartir y conseguir recetas </p>
+			</div>
+		</header>
+
+		<section id = "signin">
+			<h1>Login</h1>
+			<form class = "formulario" action = "index.html" method = "post">
+				<p><label for= "login">Login: <span class="asterisco">*</span></label>
+				<input type = "text" name = "login" required = "" autofocus></p>
+				<p><label for= "contrasena">Contrase&ntilde;a: <span class="asterisco">*</span></label>
+				<input type = "password" name = "contrasena" id = contrasena required=""></p>
+				<input type = "submit" name = "inicioSesion" value = "Login"/>
+			</form>
+			<a href="registro.html">Registro</a>
+		</section>
+
+		<footer>
+			<p>Copyright: D&eacute;bora Galdeano Gonz&aacute;lez, Programación del Cliente Web.</p>
+			<p>Grado en Ingenier&iacute;a Multimedia UA, a&ntilde;o 2018.</p>
+			<a href="acerca.html"> Informaci&oacute;n de contacto</a>
+		</footer>
+	</body>
+</html>

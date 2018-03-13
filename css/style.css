@@ -1,0 +1,375 @@
+html{
+	font-family: Pristina;
+		
+}
+body{
+	background-color: #ddc1ae;
+	margin: 0;
+}
+header{
+	width: 100%;
+	position: fixed;
+    top: 0;
+    z-index: 2;
+}
+article, section{
+	height: 100%;
+}
+header div:last-child{
+	border-bottom: solid #000000;
+	background-color: #ddc1ae;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 12px;
+}
+footer{
+	box-sizing: border-box;
+	text-align: center;
+	padding: 25px;
+	background-color: #000000;
+    color: #ddc1ae;
+}
+footer a{
+	color: #ddc1ae;
+	font-size: 20px;
+}
+.datosPersonales{
+	display: inline-block;
+}
+.subir{
+	margin-left: 5%;
+}
+
+/*Menús y listas de opciones*/
+#TituloSubtitulo {
+	box-sizing: border-box;
+	width: 100%;
+    height: 175px;
+    padding: 25px 2%;
+    display: block;
+    background-color: #ddc1ae;
+    border-bottom: solid #000000;
+} 
+#TituloSubtitulo2{
+	display: none;
+	box-sizing: border-box;
+	width: 100%;
+    background-color: #ddc1ae;
+    border-bottom: solid #000000;
+}
+.tituloWeb {
+    text-align: left;
+}
+.descripcionWeb{
+	text-align: left;
+	display: inline-flex;
+}
+.logo {
+    float: left;
+    margin: 0 1%;
+    text-align: right;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul>li{
+	list-style: none;
+}
+.opcionMenu{
+    padding: 5px 5px 2px 5px;
+    height: 25px;
+    font-size: 24px;
+   }
+.navegacionWeb {
+    margin: -80px 0;
+    padding: 0 0 0 41%;
+    right: 0px;
+    width: 60%;
+    height: 67px;
+    text-align: center;
+}
+.navegacionWeb ul{
+	display: inline-flex;
+}
+.navegacionWeb ul li{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    padding: 0.3em;
+}
+
+/*Enlaces y texto*/
+h1{
+	font-size: 72px;
+	margin: 0;
+}
+p, li{
+	font-size: 28px;
+	margin: 0;
+}
+.opcionMenu span{
+	margin-left: 5px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: underline;
+}
+.InfoReceta, .elaboracion{
+	font-size: 24px;
+}
+.InfoReceta:first-child{
+	font-size: 36px;
+}
+
+/*Imágenes y datos de las recetas*/
+#indice, #register, #elaboracionReceta{
+	margin: 235px 0 0 0;
+}
+#indice2{
+	display: none;
+}
+.imgReceta{
+	height: 100%; 
+	width: 100%;
+	position: relative;
+}
+.datosReceta{
+	box-sizing: border-box;
+    z-index: 1;
+    background-color: rgba(221, 193, 174,0.75);
+    width: 500px;
+    padding: 25px 25px 25px 25px;
+    margin: 10% 0 0 4%;
+    position: absolute;
+}
+.recetas > li{
+	margin: -13px 0;
+}
+.datosElaboracionReceta{
+	padding: 3%;
+}
+
+/*Formularios*/
+.formulario{
+	padding: 3%;
+}
+.formulario input:focus{
+	background-color: #FFFF99;
+}
+.formulario input:hover{
+	border: solid #BB7777;
+}
+.formulario input:last-child{
+	margin: 20px 0; 
+}
+select:hover{
+	border: solid 1px #BB7777;
+}
+@media all and (max-width: 1345px)
+{
+	/*Menús y listas de opciones*/
+	#TituloSubtitulo {
+	    padding: 25px 3%;
+	    height: 175px;
+	}
+	.opcionMenu span{
+		display: none;
+	}
+	.navegacionWeb{
+		margin: -80px 0 0 5%;
+    	padding: 0 0 0 44%;
+	    width: initial;
+	}
+	.navegacionWeb ul{
+    	display: block;
+	}
+	.navegacionWeb ul li{
+    	margin: 0 2%;
+	}
+
+	/*Imágenes y datos de las recetas*/
+	#indice, #register, #elaboracionReceta{
+		margin: 235px 0 0 0;
+	}
+	.datosReceta{
+		width: 375px;
+		margin: 7% 0 0 4%;
+	}
+	.InfoReceta{
+		font-size: 20px;
+	}
+	.InfoReceta:first-child{
+		font-size: 28px;
+	}
+}
+
+@media all and (max-width: 1080px)
+{
+	/*Menús y listas de opciones*/
+	#TituloSubtitulo {
+	    padding: 25px 1%;
+	    height: 225px;
+        text-align: center;
+	}
+	.tituloWeb{
+		text-align: center;
+	}
+	.descripcionWeb{
+		display: initial;
+	}
+	.navegacionWeb{
+	    margin: 25px 0;
+	    padding: 0;
+	    text-align: center;
+	}
+
+	/*Enlaces y textos*/
+	h1{
+		font-size: 60px;
+	}
+	p{
+		font-size: 24px;
+	}
+	.logo{
+ 	   padding-right: 0;
+ 	   width: 34%;
+ 	   margin: 0 -13% 0 0;
+	}
+	/*Imágenes y datos de las recetas*/
+	#indice, #register, #elaboracionReceta{
+		margin: 285px 0 0 0;
+	}
+	.InfoReceta{
+		font-size: 18px;
+	}
+	.InfoReceta:first-child{
+		font-size: 24px;
+	}
+	.datosReceta{
+		margin: 7% 0 0 2%;
+		width: 375px
+	}
+}
+@media all and (max-width: 960px)
+{
+	/*Imágenes y datos de las recetas*/
+	#indice2{
+		display: block;
+		margin: 285px 0 0 0;
+	}
+	#indice{
+		display: none;
+	}
+	.datosReceta{
+	    background-color: initial;
+	    width: 90%;
+	    height: 100%;
+	    position: relative;
+	    margin: 0 0 4% 4%;
+	    padding: 0;
+	}
+	.datosReceta li{
+		display: block;
+	}
+	.InfoReceta{
+		font-size: 24px;
+	}
+	.InfoReceta:first-child{
+		font-size: 36px;
+	}
+	.elaboracion{
+		font-size: 20px
+	}
+	.imgReceta{
+		max-width: 100%;
+	}
+}
+@media all and (max-width: 640px)
+{
+	/*Menús y listas de opciones*/
+	#TituloSubtitulo {
+	    padding: 50px 0 0 0;
+	}
+	.navegacionWeb ul li {
+	    padding: 0.3em 0;
+	}
+	/*Enlaces y textos*/
+	h1{
+		font-size: 55px;
+	}
+	p, li{
+		font-size: 20px;
+	}
+	.logo{
+		width: 30%;
+ 	   	margin: -17.5px -3% 0 0;
+	}
+	.subir{
+		margin-left: 0;
+	}
+}
+@media all and (max-width: 480px)
+{
+	/*Menús y listas de opciones*/
+	#TituloSubtitulo{
+		display: none;
+	}
+	#TituloSubtitulo2{
+		display: block;
+		padding: 20px 1%;
+	    min-height: 140px;
+        text-align: center;
+	}
+	.tituloWeb{
+		margin: 0;
+	}
+	.descripcionWeb {
+		text-align: center;
+	}
+	.menuHamburguesa{
+	    display: block;
+	    height: 48px;
+	    width: 48px;
+	    float: left;
+	    margin: 50px 0 0 -50px;
+	    /* text-align: left; */
+	    /* margin: 0 50% 0 13%; */
+	}
+	.menuHamburguesa ul li #bars{
+		display: inline-flex;
+		height: 48px;
+	    width: 48px;
+	}
+	.menuHamburguesa ul li #bars:hover{
+		.navegacionWeb ul li{
+			display: block;
+		}	
+	}
+	.navegacionWeb ul li{
+		display: none;
+	}
+
+	/*Enlaces y textos*/
+	.logo{
+		margin: 0 0 0 5%;
+		width: auto;
+	}
+	.logo img{
+		height: 48px;
+		width: 48px;
+	}
+
+	/*Imágenes y datos de las recetas*/
+	#indice2, #register, #elaboracionReceta{
+		margin: 200px 0 0 0;
+	}
+	.InfoReceta{
+		font-size: 18px;
+	}
+	.InfoReceta:first-child{
+		font-size: 24px;
+	}
+}
