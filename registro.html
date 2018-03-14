@@ -52,7 +52,7 @@
 			<h1>Registro</h1>
 			<form class = "formulario" action = "login.html" method = "post">
 				<p><label for= "login">Login: <span class="asterisco">*</span></label>
-				<input type = "text" name = "login" required = "" autofocus></p>
+				<input type = "text" pattern = "[a-zA-Z]+[0-9]" name = "login" required = "" autofocus></p>
 				<p><label for= "nombre">Nombre: <span class="asterisco">*</span></label>
 				<input type = "text" name = "nombre" required=""></p>
 				<p><label for= "contrasena">Contrase&ntilde;a: <span class="asterisco">*</span></label>
@@ -60,14 +60,17 @@
 				<p><label for= "recontrasena">Repetir contrase&ntilde;a: <span class="asterisco">*</span></label>
 				<input type = "password" name = "recontrasena" id = recontrasena required=""></p>
 				<p><label for= "email">Email: <span class="asterisco">*</span></label>
-				<input type = "text" name = "email" required=""></p>
+				<input type = "email" name = "email" required=""></p>
 				<input type = "submit" name = "registrarse" value = "Registrarse"/>
 			</form>
 		</section>
 		<footer>
-			<p>Copyright: D&eacute;bora Galdeano Gonz&aacute;lez, Programación del Cliente Web.</p>
-			<p>Grado en Ingenier&iacute;a Multimedia UA, a&ntilde;o 2018.</p>
-			<a href="acerca.html"> Informaci&oacute;n de contacto</a>
+			<div class = "datosPersonales">
+				<p><i class = "fa fa-copyright"></i>: D&eacute;bora Galdeano Gonz&aacute;lez, Programación del Cliente Web.</p>
+				<p>Grado en Ingenier&iacute;a Multimedia UA, a&ntilde;o 2018.</p>
+				<a href="acerca.html"> Informaci&oacute;n de contacto</a>
+			</div>
+			<a href="" class = "subir"><i id = "up" class = "fa fa-chevron-circle-up"> </i></a>
 		</footer>
 	</body>
 </html>

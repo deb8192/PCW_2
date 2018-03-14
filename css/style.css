@@ -1,6 +1,7 @@
 html{
 	font-family: Pristina;
-		
+	min-height: 100%;
+	position:relative;
 }
 body{
 	background-color: #ddc1ae;
@@ -21,6 +22,7 @@ header div:last-child{
 	height: 50px;
 	box-sizing: border-box;
 	padding: 12px;
+	z-index: 1;
 }
 footer{
 	box-sizing: border-box;
@@ -28,6 +30,9 @@ footer{
 	padding: 25px;
 	background-color: #000000;
     color: #ddc1ae;
+    width: 100%;
+    position: absolute;
+  	bottom: 0;
 }
 footer a{
 	color: #ddc1ae;
@@ -97,11 +102,18 @@ ul>li{
     flex-flow: row nowrap;
     padding: 0.3em;
 }
+.navegacionWeb ul li:active{
+		background-color: #bba07b;
+	}
 
 /*Enlaces y texto*/
 h1{
 	font-size: 72px;
 	margin: 0;
+}
+h2{
+	font-size: 42px;
+	margin: 12px 0;
 }
 p, li{
 	font-size: 28px;
@@ -123,11 +135,19 @@ a:hover{
 .InfoReceta:first-child{
 	font-size: 36px;
 }
+#up{
+	font-size: 48px;
+}
+
+/*Margen del header y del footer*/
+#register, #elaboracionReceta, #signin, #contact{
+	margin: 185px 0 150px 4%;
+}
+#indice{
+	margin: 235px 0 150px 4%;
+}
 
 /*Imágenes y datos de las recetas*/
-#indice, #register, #elaboracionReceta{
-	margin: 235px 0 0 0;
-}
 #indice2{
 	display: none;
 }
@@ -154,13 +174,13 @@ a:hover{
 
 /*Formularios*/
 .formulario{
-	padding: 3%;
+	padding: 25px 3%;
 }
 .formulario input:focus{
 	background-color: #FFFF99;
 }
 .formulario input:hover{
-	border: solid #BB7777;
+	border: solid 2px #BB7777;
 }
 .formulario input:last-child{
 	margin: 20px 0; 
@@ -191,9 +211,6 @@ select:hover{
 	}
 
 	/*Imágenes y datos de las recetas*/
-	#indice, #register, #elaboracionReceta{
-		margin: 235px 0 0 0;
-	}
 	.datosReceta{
 		width: 375px;
 		margin: 7% 0 0 4%;
@@ -230,6 +247,9 @@ select:hover{
 	h1{
 		font-size: 60px;
 	}
+	h2{
+		font-size: 30px;
+	}
 	p{
 		font-size: 24px;
 	}
@@ -238,10 +258,17 @@ select:hover{
  	   width: 34%;
  	   margin: 0 -13% 0 0;
 	}
-	/*Imágenes y datos de las recetas*/
-	#indice, #register, #elaboracionReceta{
-		margin: 285px 0 0 0;
+	/*Margen del header*/
+	#register, #elaboracionReceta, #signin, #contact{
+		margin: 235px 0 140px 4%;
+		height: 100%;
 	}
+	#indice{
+		margin: 285px 0 140px 4%;
+		height: 100%;
+	}
+
+	/*Imágenes y datos de las recetas*/
 	.InfoReceta{
 		font-size: 18px;
 	}
@@ -258,7 +285,7 @@ select:hover{
 	/*Imágenes y datos de las recetas*/
 	#indice2{
 		display: block;
-		margin: 285px 0 0 0;
+		margin: 285px 0 140px 0;
 	}
 	#indice{
 		display: none;
@@ -300,6 +327,9 @@ select:hover{
 	h1{
 		font-size: 55px;
 	}
+	h2{
+		font-size: 25px;
+	}
 	p, li{
 		font-size: 20px;
 	}
@@ -309,6 +339,13 @@ select:hover{
 	}
 	.subir{
 		margin-left: 0;
+	}
+}
+@media all and (max-width: 518px)
+{
+	/*Marge del header*/
+	footer p, footer a{
+		font-size: 18px;
 	}
 }
 @media all and (max-width: 480px)
@@ -329,25 +366,46 @@ select:hover{
 	.descripcionWeb {
 		text-align: center;
 	}
+	.navegacionWeb, .navegacionWeb ul li{
+		display: none;
+		z-index: 2;
+		position: relative;
+		text-align: left;
+		left: 0;
+	}
+	.navegacionWeb ul li{
+		padding-left: 50px; 
+		margin: 0;
+		transform: translate(-50px, -25px);
+		border-bottom: solid #000000;
+	}
+	.navegacionWeb ul li:first-child{
+		border-top: solid #000000;
+	}
+	.navegacionWeb ul li .opcionMenu span{
+		display: inline-flex;
+		transform: translate(10px, -10px);
+	}
 	.menuHamburguesa{
 	    display: block;
 	    height: 48px;
 	    width: 48px;
 	    float: left;
 	    margin: 50px 0 0 -50px;
-	    /* text-align: left; */
-	    /* margin: 0 50% 0 13%; */
+	}
+	.menuHamburguesa ul li{
+		height: 48px;
+	    width: 48px;
 	}
 	.menuHamburguesa ul li #bars{
 		display: inline-flex;
 		height: 48px;
 	    width: 48px;
 	}
-	.navegacionWeb ul li{
+	.menuHamburguesa ul li:hover > .navegacionWeb, .navegacionWeb ul li{
 		display: block;
-	}	
-	.navegacionWeb ul li{
-		display: none;
+		background-color: #ddc1ae;
+		width: 480px;
 	}
 
 	/*Enlaces y textos*/
@@ -359,11 +417,18 @@ select:hover{
 		height: 48px;
 		width: 48px;
 	}
+	/*Marge del header*/
+	#register, #elaboracionReceta, #signin, #contact{
+		margin: 150px 0 190px 4%;
+	}
+	#indice2{
+		margin: 200px 0 190px 4%;
+	}
+	#up{
+		font-size: 32px;
+	}
 
 	/*Imágenes y datos de las recetas*/
-	#indice2, #register, #elaboracionReceta{
-		margin: 200px 0 0 0;
-	}
 	.InfoReceta{
 		font-size: 18px;
 	}
