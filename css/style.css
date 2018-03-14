@@ -143,6 +143,12 @@ a:hover{
 #register, #elaboracionReceta, #signin, #contact{
 	margin: 185px 0 150px 4%;
 }
+#elaboracionReceta{
+	margin: 185px 0 150px 0;
+}
+#elaboracionReceta h1{
+	margin-left: 4%;
+}
 #indice{
 	margin: 235px 0 150px 4%;
 }
@@ -261,11 +267,15 @@ select:hover{
 	/*Margen del header*/
 	#register, #elaboracionReceta, #signin, #contact{
 		margin: 235px 0 140px 4%;
-		height: 100%;
+	}
+	#elaboracionReceta{
+		margin: 235px 0 140px 0;
+	}
+	#elaboracionReceta h1{
+		margin-left: 4%;
 	}
 	#indice{
 		margin: 285px 0 140px 4%;
-		height: 100%;
 	}
 
 	/*Imágenes y datos de las recetas*/
@@ -420,6 +430,12 @@ select:hover{
 	/*Marge del header*/
 	#register, #elaboracionReceta, #signin, #contact{
 		margin: 150px 0 190px 4%;
+	}
+	#elaboracionReceta{
+		margin: 150px 0 190px 0;
+	}
+	#elaboracionReceta h1{
+		margin-left: 4%;
 	}
 	#indice2{
 		margin: 200px 0 190px 4%;
